@@ -1,0 +1,139 @@
+/* * {
+  border: solid 0.5px grey;
+} */
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center
+}
+
+.clickButton {
+  width: 360px;
+  height: 360px;
+  margin:10px;
+}
+
+.roundChoice{
+display:none;
+justify-content: center;
+margin:10px;
+}
+
+.pickIdol{
+  display: none;
+}
+
+#finishTxt{
+  font-size: x-large;
+  font-weight: 600;
+}
+
+#leftImgTxt{
+  font-size: large;
+  font-weight: 600;
+}
+
+#rightImgTxt{
+  font-size: large;
+  font-weight: 600;
+}
+
+#pickIdolTxt{
+  font-size:x-large;
+  font-weight: 600;
+  display: none;
+  position: relative;
+  top: -160px;
+  margin: 0 20px;
+}
+
+.reset{
+  background-color: white;
+  border-radius: 15px;
+  font-size: large;
+  width: 120px;
+  height: 60px;
+  display: none;
+  margin:20px;
+}
+
+
+#finalImg{
+  display: none;  
+  position: relative;
+  left : 0;
+  top : 0;
+  width: 360px;
+  height: 360px;
+}
+
+img {
+  position: relative;
+  left : -8px;
+  top : -3px;
+  width: 360px;
+  height: 360px;
+}
+
+.imageSet{
+  display: none;
+}
+
+
+@media (max-width:400px) {
+  body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+  #headControl{
+    display: flex;
+  }
+
+  .choiceIdol{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .clickButton{
+    width: 200px;
+    height: 200px;
+    margin: 40px;
+  }
+
+  #pickIdolTxt{
+    position: relative;
+    top: 10px
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
+
+  #finalImg{
+    display: none;  
+    position: relative;
+    left:28px;
+    width: 200px;
+    height: 200px;
+  }
+
+  #finishTxt{
+    position: relative;
+    top: 10px;
+  }
+
+}
