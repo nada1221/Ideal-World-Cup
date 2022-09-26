@@ -138,7 +138,10 @@ pickIdol1.addEventListener('click', (e) => {
             type = type / 2
             secondHead.innerText = '결승!'
             leftImg.src=`${boyImgSet16[choiceNumb4[0]].src}`
+            leftImgTxt.innerText=`${boyImgSet16[choiceNumb4[0]].alt}`
             rightImg.src=`${boyImgSet16[choiceNumb4[1]].src}`
+            rightImgTxt.innerText=`${boyImgSet16[choiceNumb4[1]].alt}`
+            console.log('last',choiceNumb4)
         } else if (type === 4) {
             createImg4()
         }
@@ -152,6 +155,8 @@ pickIdol1.addEventListener('click', (e) => {
             pickIdol2.style.display = 'none';
             finish.style.display = 'block'
             vers.style.display='none'
+            console.log('last',choiceNumb4[0])
+
         }
 
     }
@@ -193,7 +198,10 @@ pickIdol2.addEventListener('click', (e) => {
             type = type / 2
             secondHead.innerText = '결승!'
             leftImg.src=`${boyImgSet16[choiceNumb4[0]].src}`
+            leftImgTxt.innerText=`${boyImgSet16[choiceNumb4[0]].alt}`
             rightImg.src=`${boyImgSet16[choiceNumb4[1]].src}`
+            rightImgTxt.innerText=`${boyImgSet16[choiceNumb4[1]].alt}`
+            console.log('last',choiceNumb4)
         } else if (type === 4) {
             createImg4()
         }
@@ -207,6 +215,8 @@ pickIdol2.addEventListener('click', (e) => {
             pickIdol2.style.display = 'none';
             finish.style.display = 'block'
             vers.style.display='none'
+            console.log('last',choiceNumb4[1])
+
         }
 
     }
