@@ -122,7 +122,10 @@ img {
     width: 200px;
     height: 200px;
   }
-
+  #headControl{
+    display: flex;
+    flex-direction: column;
+  }
   #finalImg{
     display: none;  
     position: relative;
@@ -132,7 +135,7 @@ img {
   }
 
   #finishTxt{
-    position: relative;
+    position:relative  ;
     top: 10px;
   }
 
